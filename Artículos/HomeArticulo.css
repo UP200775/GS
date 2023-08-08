@@ -1,0 +1,176 @@
+body {
+  background:  #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.blog-card {
+  width: 350px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.blog-card .color-overlay {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.blog-card .gradient-overlay {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+
+.blog-card:hover .card-info {
+  opacity: 1;
+  bottom: 75px;
+}
+
+.title-content {
+  text-align: center;
+  margin: 20px 0 0 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  #0a141dab;
+  border: 2px solid rgba(51, 51, 51, 0.5);
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.title-content:before,
+.title-content:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: rgba(51, 51, 51, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-content:before {
+  left: -15px;
+}
+
+.title-content:after {
+  right: -15px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9CC9E3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #87dcf2;
+}
+
+.intro {
+  width: 170px;
+  margin: 0 auto;
+  color: #9CC9E3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: px;
+  line-height: 18px;
+}
+
+.card-info {
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+  color: #DCE3E7;
+  font-family: "Droid Serif", serif;
+  font-style: 16px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.card-info .boton-mas{
+  font-size: 15px;
+  background-color: #131c24;
+  border: #0a141d;
+  text-decoration: none;
+  color: #87dcf2;
+  position: relative;
+  padding: 5px 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+  border-radius: 20px;
+}
+
+.utility-info {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 20;
+}
+
+.utility-list {
+  background-color: #0a141d;
+  list-style-type: none;
+  margin: 0 0 30px 20px;
+  padding: 0;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.utility-list li {
+  margin: 0 15px 0 0;
+  padding: 0 0 0 22px;
+  display: inline-block;
+  color: #DCE3E7;
+  font-family: "Roboto", sans-serif;
+}
+
+.utility-list li.date {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg) no-repeat 0 0.1em;
+}
+
+.related-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 5px;
+}
