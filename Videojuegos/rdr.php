@@ -1,6 +1,3 @@
-
-        
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +15,7 @@
     <link href="../Css/juego.css" rel="stylesheet" />
     <link href="../Header/Header.css" rel="stylesheet" />
     <link href="../Footer/estilos.css" rel="stylesheet" />
-    <link href="zoom.css" rel="stylesheet" />
-    <script src="zoom.js"></script>
+
     <link href="button.css" rel="stylesheet" />
 </head>
 
@@ -39,18 +35,25 @@
                     allowfullscreen></iframe></div>
             <div class="col-lg-5">
                 <h1 class="text-white">Red Dead Redemption </h1>
-                <h3 class="text-white">Sinopsis</h3>
-                <p class="text-white">Estados Unidos, primeros años del siglo XX. La era de los vaqueros llega a su fin.
-                    Cuando unos agentes federales amenazan a su familia, el exforajido John Marston recorre la frontera
-                    estadounidense para ayudar a imponer la ley. Vive intensos tiroteos, dramáticos asaltos a trenes,
-                    misiones de cazarrecompensas y duelos durante una época de violentos cambios. Red Dead Redemption es
-                    una batalla épica por la supervivencia en un espectacular mundo abierto en el que John Marston
-                    intenta enterrar su sangriento pasado acabando con un hombre tras otro.</p>
-                <p class="text-white"></p>
+                <h3 class="text-white">Descripcion</h3>
+                <p class="text-white">Red Dead Redemption es un videojuego no lineal de acción-aventura wéstern
+                    desarrollado por Rockstar San Diego. El videojuego fue anunciado oficialmente el 4 de febrero de
+                    2009, y se lanzó el 18 de mayo de 2010 en Norteamérica y el 21 de mayo en Europa y Australia para
+                    Xbox 360 y PlayStation 3. Es considerado el sucesor espiritual de Red Dead Revolver, lanzado en
+                    2004.</p>
             </div>
         </div>
         <!-- Call to Action-->
         <div class="card text-white bg-dark my-5 py-4">
+            <div class="card-body ">
+                <p class="text-white m-0 text-justify">
+                <h3>Sinposis</h3>
+                <p class="text-white">Cuando agentes federales amenazan a su familia, el exforajido John Marston se ve
+                    obligado a ir tras la banda de criminales que en su día llamó amigos. Vive los acontecimientos que
+                    prosiguen al exitoso juego de 2018, Red Dead Redemption 2, en la aclamada historia de Marston, una
+                    lucha por enterrar su sangriento pasado víctima a víctima.
+                </p>
+            </div>
             <div class="card-body">
                 <p class="text-white m-0 text-justify">
                 <h3>Jugabilidad</h3>
@@ -83,47 +86,48 @@
             </div>
         </div>
         <!-- Content Row-->
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/rdr1.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+
+        <div class="row m-6">
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/rdr1.jpg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/rdr2.jpeg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/rdr3.jpeg" style="height: 400px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/rdr1.jpg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/rdr2.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/rdr2.jpeg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/rdr3.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/rdr3.jpeg">
                 </div>
             </div>
         </div>
@@ -144,9 +148,3 @@
 </body>
 
 </html>
- 
-  
-
-
-
-

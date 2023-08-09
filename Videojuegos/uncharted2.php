@@ -16,8 +16,6 @@
     <link href="../Css/juego.css" rel="stylesheet" />
     <link href="../Header/Header.css" rel="stylesheet" />
     <link href="../Footer/estilos.css" rel="stylesheet" />
-    <link href="zoom.css" rel="stylesheet" />
-    <script src="zoom.js"></script>
     <link href="button.css" rel="stylesheet" />
 </head>
 
@@ -76,47 +74,47 @@
             </div>
         </div>
         <!-- Content Row-->
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/uncharted21.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        <div class="row m-6">
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/uncharted21.jpg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/uncharted22.jpeg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/uncharted23.jpeg" style="height: 400px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/uncharted21.jpg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/uncharted22.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/uncharted22.jpeg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/uncharted23.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/uncharted23.jpeg">
                 </div>
             </div>
         </div>
