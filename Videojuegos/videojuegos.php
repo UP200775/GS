@@ -1,5 +1,4 @@
-       
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <HTML lang="en">
 
 <head>
@@ -8,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <title>Videojuegos</title>
 
-  
+
   <link rel="stylesheet" href="../Header/Header.css">
   <link rel="stylesheet" href="../Footer/estilos.css">
   <link rel="stylesheet" href="games.css">
@@ -22,8 +21,8 @@
 <body>
   <div class="card-container">
     <?php
-       include '../DB_conexion.php';
-       $conn = Conexion();   
+    include '../DB_conexion.php';
+    $conn = Conexion();
 
     $sql = "SELECT * FROM videojuegos";
     $result = $conn->query($sql);
@@ -92,9 +91,44 @@
       case 8:
         window.location.href = "rdr.php"
         break;
+      case 9:
+        window.location.href = "skyrim.php"
+        break;
+      case 10:
+        window.location.href = "twd.php"
+        break;
+      case 11:
+        window.location.href = "gta5.php"
+        break;
+      case 12:
+        window.location.href = "dai.php"
+        break;
+      case 13:
+        window.location.href = "witcher3.php"
+        break;
+      case 14:
+        window.location.href = "overwatch.php"
+        break;
+      case 15:
+        window.location.href = "botw.php"
+        break;
+      case 16:
+        window.location.href = "gow.php"
+        break;
+      case 17:
+        window.location.href = "sekiro.php"
+        break;
+      case 18:
+        window.location.href = "tlou2.php"
+        break;
+      case 19:
+        window.location.href = "itt.php"
+        break;
+      case 20:
+        window.location.href = "elden.php"
+        break;
     }
   }
 </script>
 
 </HTML>
-       

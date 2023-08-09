@@ -1,5 +1,3 @@
-
-        
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +15,6 @@
     <link href="../Css/juego.css" rel="stylesheet" />
     <link href="../Header/Header.css" rel="stylesheet" />
     <link href="../Footer/estilos.css" rel="stylesheet" />
-    <link href="zoom.css" rel="stylesheet" />
-    <script src="zoom.js"></script>
     <link href="button.css" rel="stylesheet" />
 </head>
 
@@ -38,7 +34,23 @@
                     allowfullscreen></iframe></div>
             <div class="col-lg-5">
                 <h1 class="text-white">Grand Theft Auto 4</h1>
-                <h3 class="text-white">Sinopsis</h3>
+                <h3 class="text-white">Descripcion</h3>
+                <p class="text-white">Grand Theft Auto IV (abreviado como GTA IV o GTA 4) es un videojuego de
+                    acción-aventura de mundo abierto desarrollado por Rockstar North. El videojuego, precedido por
+                    Grand Theft Auto: Vice City Stories, es el noveno título de la serie Grand Theft Auto y el primero
+                    de la misma en aparecer en las videoconsolas de séptima generación. Fue lanzado para Xbox 360 y
+                    PlayStation 3 en Australia, Europa y Norteamérica el 29 de abril de 2008 y en Japón el 30 de
+                    octubre de 2008. La versión de Windows del juego fue lanzada en Norteamérica el 2 de diciembre de
+                    2008 y en Europa el 3 de diciembre. Se desarrollaron dos episodios descargables para Xbox 360,
+                    PC y PlayStation 3; el primero fue The Lost and Damned, lanzado el 17 de febrero de 2009, y
+                    el segundo fue The Ballad of Gay Tony, que salió al mercado el 29 de octubre de 2009</p>
+            </div>
+        </div>
+        <!-- Call to Action-->
+        <div class="card text-white bg-dark my-5 py-4">
+            <div class="card-body">
+                <p class="text-white m-0 text-justify">
+                <h3>Sinopsis</h3>
                 <p class="text-white">Grand Theft Auto IV narra la historia de Niko Bellic, un inmigrante ilegal y
                     veterano de la Guerra de Bosnia. Tras ser convencido por su primo Roman, que emigró a Liberty City
                     años antes del comienzo de la historia en el juego, Niko decide abandonar Europa del Este con rumbo
@@ -56,9 +68,6 @@
                     el negocio con Dimitri para asegurarse una buena recompensa económica —como le aconseja su primo
                     Roman— o no aceptar el negocio —como le pide Kate— y asesinar a Dimitri.</p>
             </div>
-        </div>
-        <!-- Call to Action-->
-        <div class="card text-white bg-dark my-5 py-4">
             <div class="card-body">
                 <p class="text-white m-0 text-justify">
                 <h3>Jugabilidad</h3>
@@ -94,47 +103,47 @@
             </div>
         </div>
         <!-- Content Row-->
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/gta41.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        <div class="row m-6">
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/gta41.jpg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/gta42.jpeg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/gta43.jpg" style="height: 400px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/gta41.jpg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/gta42.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/gta42.jpeg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/gta43.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/gta43.jpg">
                 </div>
             </div>
         </div>
@@ -155,10 +164,3 @@
 </body>
 
 </html>
- 
-     
-
-
-
-
-

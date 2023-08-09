@@ -1,5 +1,3 @@
-
-        
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +15,6 @@
     <link href="../Css/juego.css" rel="stylesheet" />
     <link href="../Header/Header.css" rel="stylesheet" />
     <link href="../Footer/estilos.css" rel="stylesheet" />
-    <link href="zoom.css" rel="stylesheet" />
-    <script src="zoom.js"></script>
     <link href="button.css" rel="stylesheet" />
 </head>
 
@@ -38,7 +34,23 @@
                     allowfullscreen></iframe></div>
             <div class="col-lg-5">
                 <h1 class="text-white">Bioshock</h1>
-                <h3 class="text-white">Sinopsis</h3>
+                <h3 class="text-white">Descripcion</h3>
+                <p class="text-white">BioShock es un videojuego de disparos en primera persona y terror, desarrollado
+                    por Irrational Games (anteriormente conocida como 2K Boston/2K Australia), publicado el 21 de agosto
+                    de 2007 en Norteamérica para el sistema operativo Windows y la consola Xbox 360, tres días después
+                    en algunos países de Europa y Australia. Una versión para la PlayStation 3, desarrollada por 2K
+                    Marin, fue posteriormente lanzada internacionalmente el 17 de octubre de 2008, el 20 en España y el
+                    21 del mismo mes en Norteamérica. Así como una versión para Mac OS X, el 7 de octubre de 2009. Fue
+                    diseñado e ideado por Ken Levine. Una secuela, BioShock 2, fue lanzada el 9 de febrero de 2010,y
+                    una tercera parte, BioShock Infinite, fue lanzada el 26 de marzo de 2013 compatible con Linux
+                    gracias a Steam, ofreciendo así una experiencia de multiplataforma completa.</p>
+            </div>
+        </div>
+        <!-- Call to Action-->
+        <div class="card text-white bg-dark my-5 py-4">
+            <div class="card-body">
+                <p class="text-white m-0 text-justify">
+                <h3>Sinopsis</h3>
                 <p class="text-white">BioShock está ambientado durante una ucronía del año 1960, en Rapture, una ciudad
                     distópica/antiutópica ficticia en el fondo del océano Atlántico. La historia de Rapture es desvelada
                     a través de grabaciones de audio y mensajes de radio mientras se explora la ciudad. Rapture fue
@@ -56,9 +68,6 @@
                     ADAM podía ser producido en masa implantando las babosas en los estómagos de niñas tomadas de
                     orfanatos, las cuales terminarían convirtiéndose en las conocidas "Little Sisters".</p>
             </div>
-        </div>
-        <!-- Call to Action-->
-        <div class="card text-white bg-dark my-5 py-4">
             <div class="card-body">
                 <p class="text-white m-0 text-justify">
                 <h3>Jugabilidad</h3>
@@ -91,47 +100,47 @@
             </div>
         </div>
         <!-- Content Row-->
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/bioshock1.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        <div class="row m-6">
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/bioshock1.jpg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/bioshock12.jpeg" style="height: 400px;">
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                    <img class="w-100 mb-3 rounded" src="../Imagenes/Games/bioshock13.jpg" style="height: 400px;">
+                </a>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/bioshock1.jpg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/bioshock12.jpeg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/bioshock12.jpeg">
                 </div>
             </div>
-            <div class="col-md-4 mb-5">
-                <div>
-                    <!-- Aplica la clase "myImg" y agrega el evento onclick -->
-                    <img class="myImg" src="../Imagenes/Games/bioshock13.jpg" height="400px" width="400px">
-                    <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="../Imagenes/Games/bioshock13.jpg">
                 </div>
             </div>
         </div>
@@ -152,5 +161,3 @@
 </body>
 
 </html>
- 
-       
