@@ -67,7 +67,7 @@ $mail->addAddress($nombre, 'archivo enviado');
 
 // Asunto y cuerpo del correo
 $mail->Subject = 'Recuperacion de PASSWORD GAMESPOTLIGHT';
-$mail->Body    = 'Entra en el siguiente link para obtener tu nueva password http://localhost/Gamespotlight/Inicio%20y%20Registro%20de%20sesion/funciones/'.$url;
+$mail->Body    = 'Entra en el siguiente link para obtener tu nueva password http://192.168.124.212/Gamespotlight/Inicio%20y%20Registro%20de%20sesion/funciones/'.$url;
 
 // Enviar el correo
 if ($mail->send()) {

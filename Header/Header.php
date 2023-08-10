@@ -36,13 +36,13 @@ session_start();
         //pegan su pagina
         ?>
             <a >Username:<?php echo $_SESSION['username1']  ?></a>
-    <a href="../Inicio y Registro de sesion/funciones/cerrar.php" >Cerrar Session</a>
+    <a href="../Inicio y Registro de sesion/funciones/cerrar.php" >Cerrar Sesión</a>
         <?php
 
     }else{
         //No se inicio sesion
         ?>
-  <a href="../Inicio y Registro de sesion/formulario.php" >Inicia Sesion</a>
+  <a href="../Inicio y Registro de sesion/formulario.php" >Inicia Sesión</a>
 <a href="../Inicio y Registro de sesion/registro.php" >Registrate</a>
         <?php
 

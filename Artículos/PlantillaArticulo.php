@@ -69,12 +69,13 @@
                         }
 
                         $artikcleID = $_GET['id'];
-                        $UserName = $_SESSION['username1'];
-
+                        
                         // Verificar si se envió un comentario
                         if (!empty($_SESSION['username1']) && !empty($_POST['comentario'])) {
+                            $UserName = $_SESSION['username1'];
                             $comentario = $_POST['comentario'];
-                            $insertQuery = "INSERT INTO `comentarios` (`ID_Comentario`, `ID_Articulo`, `Username`, `Comentario`) VALUES (NULL, '$articleID', '$UserName', '$comentario')";
+                            $insertQuery = "INSERT INTO `comentarios` (`ID_Comentario`, `ID_Articulo`, `Username`,
+                                            `Comentario`) VALUES (NULL, '$articleID', '$UserName', '$comentario')";
                             $result = $conn->query($insertQuery);
                         }
 

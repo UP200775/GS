@@ -111,7 +111,7 @@ $hashSeguro = password_hash($password, PASSWORD_DEFAULT);
     } else {
         $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$hashSeguro')";
         $conn->query($sql);
-        header("Location: redireccionamiento.php");
+        header("Location: formulario.php");
       
     }
     $conn->close();

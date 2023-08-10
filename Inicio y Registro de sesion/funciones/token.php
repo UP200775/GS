@@ -85,11 +85,7 @@ header("Location: ../olvide.php");
                 </div>
                     <button  class="btn btn-primary" type="submit" ><i class="fas fa-sign-in-alt" ></i>  Cambiar Contraseña </button>
                 </form>
-                </form>
-                <div class="col-12 forgot">
-                    <a href="../Inicio y Registro de sesion/formulario.html">Inicia Sesion</a>
-                </div>
-             
+                </form>             
             </div>
         </div>
     </div>

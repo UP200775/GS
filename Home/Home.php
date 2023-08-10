@@ -25,12 +25,12 @@
                         ¡Estaremos encantados de atenderte!</p>
                 </div>
                 <br>
+                <h3>El primer Easter Egg en los videojuegos</h3>
+                <p style="text-align: justify;">Warren Robinett estaba trabajando en Atari, en concreto en el desarrollo de 'Adventure'. En la pelicula 'Ready Player One' aparece el juego, ya que es la última prueba que el protagonista debe superar para hacerse con la propiedad de James Halliday. La historia de este Easter Egg es de lo más peculiar, así que vamos a conocerla.</p>
+                <p style="text-align: justify;">Hoy en día, cuando acabas o empiezas un juego, lo más normal es que aparezcan los nombres de las personas involucradas, pero eso en la Atari de aquellos entonces estaba totalmente fuera de la conversación. Sin embargo, Robinnet fue lo suficientemente astuto para esconder su nombre en el juego, y además bien escondido.</p>
+                <img src="../Imagenes/Home/adventure.gif" alt="">
             </div>
-            <button id="mostrarBtn">Mostrar Juego</button>
-            <br>
-            <div id="textoMostrado" style="display: none;" style="border: 1px solid #ccc;">
-                 <iframe src="../juego/juego.html" width="100%" height="900px"></iframe>
-            </div>
+            
         </div>
     </div>
     <script>
